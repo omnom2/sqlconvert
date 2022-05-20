@@ -8,4 +8,4 @@
 
     isql -v -k “DRIVER=$DRIVERPATH;SERVER=10.9.2.20,1433;UID=sa;PWD=thu4At7ale7iah5A1;Authentication=SqlPassword;TrustServerCertificate=Yes”
 
-# test
+# test2
