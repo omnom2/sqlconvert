@@ -17,6 +17,6 @@ hostname = "10.9.2.20"
 db_name = "Blumenversand_Test"
 
 source = ETLAlchemySource("mssql+pyodbc://sa:thu4At7ale7iah5A1@"+hostname)
-target = ETLAlchemyTarget("mysql://damago:damago@"+hostname+"hostname/db_name", drop_database=True)
+target = ETLAlchemyTarget("mysql://damago:damago@"+hostname+"/db_name", drop_database=True)
 target.addSource(source)
 target.migrate()
