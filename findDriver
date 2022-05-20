@@ -1,11 +1,6 @@
     Sag Ubuntu das er Windows vertraut!
-
     N=msodbcsql
-
     V=18
-
     DRIVERPATH=$(ls /opt/microsoft/$N$V/lib64/lib$N*$V* | head -1)
+    isql -v -k "DRIVER=$DRIVERPATH;SERVER=10.9.2.20,1433;UID=sa;PWD=thu4At7ale7iah5A1;Authentication=SqlPassword;TrustServerCertificate=Yes"
 
-    isql -v -k “DRIVER=$DRIVERPATH;SERVER=10.9.2.20,1433;UID=sa;PWD=thu4At7ale7iah5A1;Authentication=SqlPassword;TrustServerCertificate=Yes”
-
-# test2
